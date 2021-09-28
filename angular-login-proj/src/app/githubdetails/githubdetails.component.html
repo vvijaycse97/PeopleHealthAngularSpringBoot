@@ -1,0 +1,41 @@
+<html>
+  <h1 class="headtitle">People Health Details</h1>
+ 
+  <body class="ghdet">
+    <br>
+    <br>
+<div *ngIf="healthDetmap != null;then ValidUserDetails else InValidUserDetails" class="data-font">    </div>
+
+<ng-template #ValidUserDetails class="data-font">
+  
+  <br>
+  <br>
+  <div class="ghdetdiv">
+  <table border="1" cellpadding="1" cellspacing="1" width="250px" style="border-collapse:collapse;">
+    <thead>
+      <td align="center">State</td>
+      <td align="center">Percentage</td>
+    </thead>
+<tbody>
+  <tr *ngFor="let recipient of healthDetmap | keyvalue:sortOrder"> 
+        <td align="left"> {{recipient.key}}</td>
+     <td align="center"> {{recipient.value}}</td>
+    </tr>  
+    </tbody>
+</table>
+</div>
+</ng-template>
+<ng-template #InValidUserDetails class="data-font">
+  Invalid People Health Details! 
+  <br>
+  <br>
+</ng-template>
+<br>
+<br>
+<div class="ghdetdiv">
+To Navigate to previous page  <a routerLink="/success" class="successpagelink" routerLinkActive="active"> Click here</a>       
+<a routerLink="/logout" class="logout" routerLinkActive="active">Logout</a> 
+</div>
+  </body>
+  </html>
+

@@ -1,0 +1,32 @@
+<html>
+  <h1 class="headtitle">Welcome {{username}}</h1> 
+  
+<body>
+<br>
+<form [formGroup]="successForm" (ngSubmit)="onSubmit()" id="ghusernameForm">
+  <br>
+  <br>
+  <div class="form-group">
+    <br>        
+    <label class="healthmetric"> Health Metric: </label>
+    <select name="excelsheetname" id="excelsheetname" formControlName="excelsheetname" class="form-control"
+      [ngClass]="{ 'is-invalid': submitted && f.excelsheetname.errors }" [(ngModel)]="excelsheetname">
+        <option *ngFor="let option of options" [value]="option" >{{option}}</option>
+    </select>
+    <br>    
+      <div *ngIf="submitted && f.excelsheetname.errors" class="invalid-feedback">
+        <br> 
+        <div class="ghusrnameerrmsg" >
+            <div *ngIf="f.excelsheetname.errors.required">&nbsp;&nbsp; Excelsheetname is required</div>
+          </div>
+      </div>
+      <br>
+      <br>      
+      <button class="sendbtn">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </div>  
+</form>
+
+  <a routerLink="/logout" class="logout" routerLinkActive="active">Logout</a>
+
+</body>
+</html>

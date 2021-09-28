@@ -1,0 +1,90 @@
+/* You can add global styles to this file, and also import other style files */
+.headtitle
+{
+    text-align: center;
+    color:#4733FF;
+    padding-top: 40px; 
+}
+
+.loginForm
+{
+    text-align: center;    
+    margin:auto;
+    width:400px;   
+    padding-top: 70px; 
+}
+
+.errormsg
+{
+    text-align: center;
+    color:red;
+    padding-left:61px;
+}
+.ghusrnameerrmsg
+{
+    color:red; 
+    font-size: large;    
+    margin-left:-25px;
+}
+.ghdetdiv
+{
+    font-size: large;  
+}
+.nav-to-login
+{
+    text-align: center;
+}
+.loginbtn,.resetbtn
+{
+    background-color:#EEEEF3;
+}
+
+#ghusernameForm
+{
+    margin-left:550px;
+    margin-top: 50px;
+    
+}
+.sendbtn
+{
+    margin-left:50px;
+    height: 25px;
+    width:75px;
+    font-size: large;  
+}
+.ghdet
+{
+    margin-left:515px;
+}
+.ghtbl
+{
+    border:"1";    
+    width:"200px";
+    border-collapse:collapse;
+}
+.logout {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    font-size:20px;
+  }
+  .logoutbody
+  {
+    margin-left:65px;
+    margin-top: 50px;   
+    font-size:20px;  
+  }
+.loginlink{
+    text-align: center;
+    padding-left:480px;
+    font-size:20px;
+  }
+  .healthmetric{
+    margin-left:-80px;
+    margin-top: 30px;
+    font-size: large;  
+  }
+ 
+  ul,li {
+    list-style-type: none;
+}
